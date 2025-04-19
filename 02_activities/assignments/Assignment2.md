@@ -45,8 +45,12 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
+See Diagram 1. 
+
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+See Diagram 2 with an added employee_shifts table.  
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
@@ -56,7 +60,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 ```
 Your answer...
 ```
-
+As shown in Diagram 3, Type 2 slowly changing dimension allows us to save changes in the street address and postal code cells with a new ID, in a new row. In addition, the date when the changes were made will also be recorded. Type 1 slowly changing dimension, however, allows us to overwrite the original street address and postal code without indicating those changes.
 ***
 
 ## Section 2:
@@ -184,3 +188,6 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 ```
 Your thoughts...
 ```
+As Wikipedia informs us, the Mechanical Turk was an 18-century chess-playing robot which, as it was found out later, was in fact powered by a human sitting inside. This is a perfect metaphor for this article that discusses how thousands of low-paid "independent contractors" were hired to create one of the first databases to train AI neural networks, how Amazon created a marketplace connecting individuals and clients who want various repetitive, low-paid tasks done, and how, even before the advent of the internet, professors hired students to compile English language databases from newspaper clippings. These and other examples help illustrate that modern AI networks are in fact powered by often underpaid humans with little concern for their well-being. 
+More generally, this discussion reminds me of other ethical dilemmas, such as when a famous photographer who took a picture of a starving child became famous and received an award, but the child was likely dead by then (and in any case never received a compensation); or when the film 'Slumdog Millionaire' hired children from the slums who were never adequately compensated in spate of the huge box office. Similarly, these issues arose when leading Western companies moved their factories to poorer countries because of less costly labour protections there, resulting in a surge in cancers and other harmful consequences of harsh work conditions, and when rideshare apps became an obstacle to taxi driver unionizing. In other words, these ethical problems are not unique to AI, data and information. 
+Ethics in AI and data is an important issue, but addressing it is challenging as these scientific and technological advances are occurring in a capitalist economy that prioritizes personal rather than collective well-being. In addition, changes are happening so fast that governments are often unable to offer legislative remedies to these ethical problems. However, as ethical breaches are becoming more widely discussed, works are uniting to defend themselves. Corporate online spaces such as Facebook are increasingly used to host worker discussions with concrete results, such as when rideshare drivers in the GTA organized protests against low pay and harsh working conditions. Just a few years ago, content moderators hired by Meta in Kenya joined forces to sue the company because of unethical labour standards. These and other examples help instill optimism that citizens can successfully fight for positive changes. 
